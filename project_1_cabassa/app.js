@@ -7,7 +7,7 @@ display.textContent = 0;
 modifier.value = 1;
 
 plus.addEventListener("click", function (e) {
-    display.textContent = display.textContent + modifier.value;
+    display.textContent = display.innerText - (-modifier.value);
 });
 
 minus.addEventListener("click", function (e) {
