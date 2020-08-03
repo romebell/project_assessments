@@ -13,6 +13,11 @@ button {
     border-radius: 5px;
 }
 
+button:active {
+    position: relative;
+    top: 5px;
+}
+
 input {
     height: 4rem;
     font-size: 3rem;
