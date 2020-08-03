@@ -15,10 +15,10 @@ minus.addEventListener("click", function (e) {
 });
 
 
-// if (display.textContent < "0") {
-//     h1.style.color = "red";
-// } else {
-//     h1.style.color = "black";
-// };
+if (display.textContent < 0) {
+    h1.style.color = "red";
+} else {
+    h1.style.color = "black";
+};
 
 
