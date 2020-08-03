@@ -33,7 +33,7 @@ As you saw, the application's UI consists of:
 - A count display
 - Two buttons ("+" & "-")
 - An `<input>` element
-
+ 
 Use the screenshots below as your "wireframes".
 
 Lastly, the styling does not have to be exact, however, the closer it is to the screenshots, the better!
