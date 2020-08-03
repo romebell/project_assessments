@@ -1,19 +1,19 @@
-let inputNum = document.getElementById('input1').value;
-let plusButton = document.getElementById('plus');
-let minusButton = document.getElementById('minus');
-let text1 = document.querySelector('h1');
-document.addEventListener('DOMContentLoaded', function () {
-    
-})
+let text = document.querySelector("#num");
+let plus = document.querySelector("#plus");
+let minus = document.querySelector("#minus");
 
-plusButton.addEventListener('click', event => {
-    
-    const newValue = Number(inputNum) || 0;
-    const newText = Number(text1) || 0;
-    console.log(newText)
-    text1.innerText = newValue + newText;
-})
+document.addEventListener("DOMContentLoaded", function () {
+  plus.addEventListener("click", function () {
+    let input = document.querySelector("#input1").value;
+    let newInput = parseInt(input);
+    let newText = parseInt(text.textContent);
+    text.textContent = newText + newInput;
+  });
 
-minusButton.addEventListener('click', event => {
-    text1.textContent = text1.value - inputNum;
-})
+  minus.addEventListener("click", function () {
+    let input = document.querySelector("#input1").value;
+    let newInput = parseInt(input);
+    let newText = parseInt(text.textContent);
+    text.textContent = newText - newInput;
+  });
+});
