@@ -1,22 +1,24 @@
-var answer = document.getElementById('answer');
-var count = document.getElementById('count');
-
-var count = 1;
-var countEl = document.getElementById("count");
+let count = 0;
+const countEl = document.getElementById("count");
 
 function plus(){
-    count++;
-    countEl.value = count;
+    if(count<200){
+        count++;
+        countEl.value = count;
+    }
 }
 function minus(){
-  if (count > 1) {
+    if (count > -200) {
     count--;
     countEl.value = count;
-  }  
+    }  
 }
 
-function answer(){
-    var answer = count
-    count.appendChild(answer);
+function number(){
+    let number = document.getElementById('number')
+    number++
+    number.innerHTML = number;
+    
+
 
 }
