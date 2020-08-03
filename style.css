@@ -1,0 +1,48 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#counter {
+  text-align: center;
+  font-size: 200px;
+  margin-block-end: 0.3em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+}
+
+#operatorValue {
+  width: 10rem;
+  height: 4rem;
+  margin: 1rem;
+  font-size: 50px;
+  border-radius: 0.5rem;
+  border: 4px solid grey;
+}
+
+#plus {
+  width: 4rem;
+  height: 4rem;
+  font-size: 30px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#minus {
+  width: 4rem;
+  height: 4rem;
+  font-size: 30px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
