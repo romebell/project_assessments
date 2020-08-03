@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function (){
  let displayTotal = document.getElementById('display');
  
 let count = 0;
-//functions here
 
+//functions here
 let showNum = () => {
     displayTotal.textContent = count;
     if (count < 0){
@@ -17,10 +17,9 @@ let showNum = () => {
     }
 }
 
-
  const addInput = () => {
     newInputField = parseInt(inputField.value);
-    count = count + newInputField;
+    count += newInputField;
     //console.log(count);
     showNum();
  }
