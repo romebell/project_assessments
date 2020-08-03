@@ -3,4 +3,49 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+}
+
+.container-one {
+    width: 100%;
+    top: 100px;
+    margin: 100px 30px 150px 30px;
+    font-size: 75px;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.container-two {
+    top: 150px;
+    position: relative;
+}
+
+#minus, #plus {
+    font-size: 50px;
+    height: 75px;
+    width: 75px;
+    background-color: #cbcbcb;
+    color: white;
+    border: grey 2px solid;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+input {
+    height: 75px;
+    font-size: 50px;
+    width: 125px;
+}
+
+#minus {
+    position: fixed;
+    left: 650px;
+}
+
+#plus {
+    position: fixed;
+    top: 495px;
+    right: 650px;
 }
