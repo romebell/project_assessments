@@ -39,9 +39,9 @@ buttMinus.addEventListener('click', () => {
 //to get add output to display on screen
 // https://www.w3schools.com/jsref/dom_obj_number.asp
 //want this function to show the input i add to it
-function addNum(){
-    //grabbing the id of input
-    document.getElementById(input);
-    //displaying with .innertext for the function
-    document.getElementById('output').innerText = buttAdd
-}
+// function addNum(){
+//     //grabbing the id of input
+//     document.getElementById(input);
+//     //displaying with .innertext for the function
+//     document.getElementById('output').innerText = buttAdd
+// }
