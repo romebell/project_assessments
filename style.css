@@ -27,6 +27,11 @@ button {
     font-size: 2em;
 }
 
+button:hover {
+    color: grey;
+    background-color: white;
+}
+
 div {
     display: flex;
     flex-direction: row;
