@@ -3,6 +3,15 @@ const display = document.getElementById("display");
 const plus = document.getElementById("plus");
 const minus = document.getElementById("minus");
 
-display.innerText = "0";
-modifier.value = "1";
+display.textContent = 0;
+modifier.value = 1;
+
+plus.addEventListener("click", function (e) {
+    display.textContent = display.textContent + modifier.value;
+});
+
+minus.addEventListener("click", function (e) {
+    display.textContent = display.textContent - modifier.value;
+});
+
 
