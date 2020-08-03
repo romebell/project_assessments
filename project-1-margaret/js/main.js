@@ -6,12 +6,6 @@ let output = document.querySelector('h1')
 
 let defaultNum = parseInt(input.defaultValue)
 
-function negative (num) {
-    if (num < 0){
-        return true
-    }
-}
-
 plus.addEventListener('click', function() {
     let currentNum = parseInt(output.textContent)
     let inputNum = parseInt(input.value)

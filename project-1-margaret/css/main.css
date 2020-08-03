@@ -4,6 +4,12 @@ body {
     text-align: center;
 }
 
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
     height: 4.4rem;
     width: 4.4rem;
