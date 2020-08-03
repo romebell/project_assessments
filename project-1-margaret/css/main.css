@@ -1,3 +1,23 @@
 body {
     /* background-color: aquamarine; */
+    font-size: 3rem;
+    text-align: center;
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+    color: white;
+    font-size: 3rem;
+    background-color: rgb(131, 124, 124);
+    border-radius: 5px;
+}
+
+input {
+    height: 4rem;
+    font-size: 3rem;
+    width: 100px;
+    border: rgb(131, 124, 124) solid 3px;
+    border-radius: 5px;
+    margin: 15px;
 }
