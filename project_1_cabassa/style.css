@@ -11,11 +11,21 @@ h1  {
 }
 
 #modifier {
-    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 button {
+    color: white;
+    background-color: slategray;
     margin: 20px;
-    padding: 20px;
+    font-size: 40px;
+}
+
+button:hover {
+    color: slategray;
+    background-color: white;
+    margin: 20px;
+    font-size: 40px;
 }
