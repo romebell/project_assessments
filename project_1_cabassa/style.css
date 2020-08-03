@@ -1,0 +1,21 @@
+h1  {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modifier {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+    padding: 20px;
+}

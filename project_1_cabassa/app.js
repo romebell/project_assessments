@@ -14,4 +14,8 @@ minus.addEventListener("click", function (e) {
     display.textContent = display.textContent - modifier.value;
 });
 
+if (display.innerText < 0) {
+    h1.color = "red";
+};
+
 
