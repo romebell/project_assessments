@@ -11,15 +11,19 @@ positive.addEventListener("click",  function(){
 })
 
 negative.addEventListener("mouseover", function(event){
+    event.target.style.backgroundColor = "white";
     event.target.style.color = "gray";
     setTimeout(function() {
+        event.target.style.backgroundColor = "";
         event.target.style.color = "";
-      }, 500);
-    }, false);
+    }, 500);
+}, false);
 
 positive.addEventListener("mouseover", function(event){
-    event.target.style.color = "gray";
+    event.target.style.backgroundColor = "white";
+    event.target.style.color = "gray"
     setTimeout(function() {
+        event.target.style.backgroundColor = "";
         event.target.style.color = "";
-        }, 500);
-    }, false);
+    }, 500);
+}, false);
