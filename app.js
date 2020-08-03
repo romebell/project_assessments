@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function (){
  let inputField = document.getElementById('input-field');
  let displayTotal = document.getElementById('display');
  
-var count = 0;
+let count = 0;
 //functions here
 
 let showNum = () => {
@@ -16,17 +16,17 @@ let showNum = () => {
 
 
  const addInput = () => {
-    inputField = parseInt(inputField.value);
-    count = count + inputField;
-    console.log(count);
+    newInputField = parseInt(inputField.value);
+    count = count + newInputField;
+    //console.log(count);
     showNum();
  }
 
 
 const subtractInput = () => {
-    inputField = parseInt(inputField.value);
-    count = count - inputField;
-    console.log(count);
+    var newInputField = parseInt(inputField.value);
+    count -= newInputField;
+    //console.log(count);
     showNum();
 }
 
