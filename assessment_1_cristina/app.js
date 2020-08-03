@@ -15,8 +15,8 @@ function add() {
     result.textContent = currentNum;
     if (currentNum < 0) {
         result.style.color = "red";
-} }
-
+    } 
+}
 plus.addEventListener("click",add);
 
 function subtract() {
@@ -27,7 +27,6 @@ function subtract() {
     if (currentNum < 0) {
         result.style.color = "red";
     }
-
 }
 minus.addEventListener("click",subtract);
 
