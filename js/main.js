@@ -9,3 +9,17 @@ negative.addEventListener("click", function(){
 positive.addEventListener("click",  function(){
     value.textContent= (1*value.textContent)+(1*input.value) ;
 })
+
+negative.addEventListener("mouseover", function(event){
+    event.target.style.color = "gray";
+    setTimeout(function() {
+        event.target.style.color = "";
+      }, 500);
+    }, false);
+
+positive.addEventListener("mouseover", function(event){
+    event.target.style.color = "gray";
+    setTimeout(function() {
+        event.target.style.color = "";
+        }, 500);
+    }, false);
