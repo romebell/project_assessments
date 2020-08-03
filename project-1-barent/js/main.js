@@ -5,21 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
     let displayNum = document.getElementById('display-number');
     numField.value = 1;
     plusButton.addEventListener('click', () => {
-        addNumbers(displayNum, numField);
+        displayNum.innerText = addNumbers(displayNum, numField);
     })
     minusButton.addEventListener('click', () => {
-        console.log('minus');
+        displayNum.innerText = subtractNumbers(displayNum, numField);
     })
 })
 
 const addNumbers = (displayNum, numField) => {
     let displayInt = parseInt(displayNum.innerText);
     let numFieldInt = parseInt(numField.value)
-    console.log(displayInt, numFieldInt);
     let newVal = displayInt + numFieldInt;
     console.log(newVal);
+    return newVal;
 };
 
-const subractNumbers = () => {
-
+const subtractNumbers = (displayNum, numField) => {
+    let displayInt = parseInt(displayNum.innerText);
+    let numFieldInt = parseInt(numField.value);
+    let newVal = displayInt - numFieldInt;
+    console.log(newVal);
+    return newVal;
 };
