@@ -34,6 +34,7 @@ buttAdd.addEventListener('click', () => {
 buttMinus.addEventListener('click', () => {
    input.value = parseInt(input.value) - 1;
    output.innerText = parseInt(input.value);
+  
 })
 
 //to get add output to display on screen
