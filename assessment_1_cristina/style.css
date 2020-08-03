@@ -12,8 +12,9 @@ body {
     flex-direction: row;
 }
 
-.result {
-    margin: 5px;
+.input {
+    margin-left: 5px;
+    margin-right: 5px;
     border: 2px solid #A9A9A9;
     height: 35px;
 }
