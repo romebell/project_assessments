@@ -6,13 +6,21 @@ document.addEventListener('DOMContentLoaded', ()  =>{
     
 
     positive.addEventListener('click', function(){
+        input1 = num2.value;
         num1.value = parseInt(num1.value) + 1
-        num2.value = parseInt(num2.value) + 1
         
+        if (num1.value < 0){
+            num1.style.color = 'red'
+            
+        }      
     })
     negative.addEventListener('click', function(){
         num1.value = parseInt(num1.value) -1
-        num2.value = parseInt(num2.value) - 1
-                
+        
+        if (num1.value < 0){
+            num1.style.color = 'red'
+            
+        }       
     })
+    
 })
