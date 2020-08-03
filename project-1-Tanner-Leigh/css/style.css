@@ -22,9 +22,17 @@ form {
     height: 60px;
 }
 
+#plus:hover {
+    filter: invert(100%);
+}
+
 #minus {
     width: 60px;
     height: 60px;
+}
+
+#minus:hover {
+    filter: invert(100%);
 }
 
 p {
