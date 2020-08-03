@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     numField.value = 1;
     plusButton.addEventListener('click', () => {
         displayNum.innerText = addNumbers(displayNum, numField);
+        if (!displayNum.innerText.includes('-')) {
+            displayNum.style.color = 'black';
+        }
     })
     minusButton.addEventListener('click', () => {
         displayNum.innerText = subtractNumbers(displayNum, numField);
+        if (displayNum.innerText.includes('-')) {
+            displayNum.style.color = 'red';
+        }
     })
 })
 
