@@ -1,7 +1,7 @@
 .container {
     font-family: sans-serif;
     text-align: center;
-   
+    
     
 
 }
@@ -13,19 +13,24 @@
    
 }
 
+#plus:hover{
+    background-color: white;
+}
+
 #minus{
     padding: 15px 6px;
     font-size: 20px;
     margin: 10px;
-   
-   
-    
+}
+
+#minus:hover{
+    background-color: white;
 }
 
 #input{
     padding: 14px 40px;
     font-size: 20px;
-    width: 20px;
+    width: 30px;
     height: 20px;
 }
 
