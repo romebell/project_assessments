@@ -4,10 +4,24 @@ let input = document.getElementById("input");
 let value = document.getElementById("value");
 
 negative.addEventListener("click", function(){
-    value.textContent =(1*value.textContent)-(1*input.value) ;
+    let newValue =(1*value.textContent)-(1*input.value) ;
+    if (newValue>=0){
+        value.textContent = newValue;
+        value.style.color = "black";
+    } else if(newValue<0){
+        value.textContent = newValue;
+        value.style.color = "red";
+    } 
 })
 positive.addEventListener("click",  function(){
-    value.textContent= (1*value.textContent)+(1*input.value) ;
+    let newValue =(1*value.textContent)+(1*input.value) ;
+    if (newValue>=0){
+        value.textContent = newValue;
+        value.style.color = "black";
+    } else if(newValue<0){
+        value.textContent = newValue;
+        value.style.color = "red";
+    } 
 })
 
 negative.addEventListener("mouseover", function(event){
