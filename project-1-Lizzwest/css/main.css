@@ -4,6 +4,7 @@ body{
     position: relative;
     text-align: center;
     justify-content: center;
+    margin: 0 auto;
 }
 .container{
     padding-top: 25%;
@@ -13,6 +14,11 @@ input{
     
 
 }
+h1{
+    justify-content: center;
+    /* display: flex; */
+    padding-left: 50px;
+}
 button{
     border: 4px solid black;
     padding: 20px 40px;
@@ -21,7 +27,9 @@ button{
     /* justify-content: center;
     position: absolute; */
 }
-.output{
-    color: red;
+#output{
+    color: black;
     font-size: 40px;
+    text-align: center;
+  
 }
