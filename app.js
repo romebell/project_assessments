@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let newInput = parseInt(input);
     let newText = parseInt(text.textContent);
     text.textContent = newText + newInput;
+    if (newText + newInput < 0) {
+      text.style.color = "red";
+    } else {
+      text.style.color = "black";
+    }
   });
 
   minus.addEventListener("click", function () {
@@ -15,5 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let newInput = parseInt(input);
     let newText = parseInt(text.textContent);
     text.textContent = newText - newInput;
+    if (newText - newInput < 0) {
+      text.style.color = "red";
+    } else {
+      text.style.color = "black";
+    }
   });
 });
