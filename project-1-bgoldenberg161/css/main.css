@@ -43,3 +43,6 @@ button:hover {
 button:focus {
     outline: 0 ;
 }
+input:focus {
+    outline: 0 ;
+}
