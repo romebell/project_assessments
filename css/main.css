@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+.text {
+    width: 30px;
+    height: 20px;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    color: black;
+    text-align: center;
+}
+.button {
+    width: 30px;
+    height: 20px;
+    background: lightgray;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+#output-number {
+    border: none;
+}
