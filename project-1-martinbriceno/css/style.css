@@ -1,0 +1,47 @@
+#container {
+    margin: 0 auto;
+    display: flex;
+    height: 300px;
+    width: 400px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.top {
+    height: 200 px;
+    font-size: 50px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    background-color: lightgrey;
+    color: white;
+    font-size: 45px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+input {
+    height: 60px;
+    font-size: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: solid lightgray;
+
+}
+#mainarea {
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+
+}
