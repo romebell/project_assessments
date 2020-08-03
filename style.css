@@ -39,6 +39,10 @@ h1 {
     color: white;
 }
 
+#plus:focus {
+    outline: 0;
+}
+
 #plus:hover {
     background-color: white;
     color: gray;
@@ -53,6 +57,10 @@ h1 {
     border: solid gray 2px;
     border-radius: 10px;
     color: white;
+}
+
+#minus:focus {
+    outline: 0;
 }
 
 #minus:hover {
