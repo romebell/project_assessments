@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function (){
-
-
  //call your DOM elements here
  const plusBtn = document.getElementById('plus-btn');
  const minusBtn = document.getElementById('minus-btn');
@@ -12,6 +10,11 @@ let count = 0;
 
 let showNum = () => {
     displayTotal.textContent = count;
+    if (count < 0){
+        displayTotal.style.color = 'red';
+    } else if (count > 0) {
+        displayTotal.style.color = 'black';
+    }
 }
 
 
