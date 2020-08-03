@@ -1,0 +1,19 @@
+#number {
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    
+    
+    
+
+#count {
+    border: solid grey;
+}
+
+#plus {
+
+}
+
+#minus {
+
+}
