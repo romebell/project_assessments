@@ -3,9 +3,10 @@
     display: flex;
     height: 300px;
     width: 400px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+	display: flex;  /* defaults to row layout */
+	justify-content: center;  /* centers items horizontally in row layout */
+	align-items: center;  /* centers vertically in row layout */
+
 
 }
 
@@ -29,6 +30,11 @@ button {
     border: none;
 
 }
+
+button: clickdown {
+    background-color: white;
+    color: lightgray;
+}
 input {
     height: 60px;
     font-size: 40px;
@@ -38,10 +44,9 @@ input {
 
 }
 #mainarea {
-    margin: 0 auto;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    align-items: center;
+	display: flex;  /* defaults to row layout */
+	justify-content: center;  /* centers items horizontally in row layout */
+	align-items: center;  /* centers vertically in row layout */
+	/* flex-direction: column; will set layout to column instead of row */
 
 }
