@@ -37,6 +37,13 @@ input {
   border-radius: 0.5rem;
 }
 
+#plus:hover {
+  background-color: white;
+  color: grey;
+  border: 4px solid grey;
+  cursor: pointer;
+}
+
 #minus {
   width: 4rem;
   height: 4rem;
@@ -45,4 +52,11 @@ input {
   color: white;
   border: none;
   border-radius: 0.5rem;
+}
+
+#minus:hover {
+  background-color: white;
+  color: grey;
+  border: 4px solid grey;
+  cursor: pointer;
 }
