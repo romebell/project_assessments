@@ -5,12 +5,19 @@ body {
 }
 
 button {
-    height: 4rem;
-    width: 4rem;
+    height: 4.4rem;
+    width: 4.4rem;
     color: white;
     font-size: 3rem;
-    background-color: rgb(151, 144, 144);
+    background-color: rgb(155, 151, 151);
     border-radius: 5px;
+    border:  rgb(155, 151, 151) solid 3px
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(155, 151, 151);
+    border: 2px rgb(155, 151, 151) solid;
 }
 
 button:active {
@@ -22,7 +29,7 @@ input {
     height: 4rem;
     font-size: 3rem;
     width: 100px;
-    border: rgb(151, 144, 144) solid 3px;
+    border: rgb(155, 151, 151) solid 3px;
     border-radius: 5px;
     margin: 15px;
 }
