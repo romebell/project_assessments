@@ -1,12 +1,18 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
-    font-size: 40px;
+    font-size: 70px;
     text-align: center;
 }
 
 button {
-    font-size: 40px;
-    height: 60px;
-    width: 60px;
+    font-size: 70px;
+    height: 100px;
+    width: 100px;
     border: 3px solid gray;
     background-color: gray;
     color: white;
@@ -14,10 +20,12 @@ button {
 }
 
 input {
-    height: 55px;
-    width: 80px;
+    font-family: sans-serif;
+    height: 95px;
+    width: 150px;
     border: 3px solid gray;
-    font-size: 35px;
+    font-size: 70px;
     border-radius: 15%;
+    text-align: center;
     
 }
