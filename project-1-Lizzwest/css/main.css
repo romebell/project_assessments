@@ -8,6 +8,7 @@ body{
 }
 .container{
     padding-top: 25%;
+    align-items: center;
 }
 input{
     font-size: 40px;
@@ -27,6 +28,14 @@ button{
     /* display: flexbox; */
     /* justify-content: center;
     position: absolute; */
+}
+#plus:hover {
+    background: white;
+    color: grey;
+}
+#minus:hover {
+    background: white;
+    color: grey;
 }
 #output{
     color: black;

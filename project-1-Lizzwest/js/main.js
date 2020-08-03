@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	function minusClick() {
         finalNumber -= input;
 		
-		newNumber();
+        newNumber();
+        
 	}
 	document.getElementById('minus').addEventListener('click', minusClick);
 
