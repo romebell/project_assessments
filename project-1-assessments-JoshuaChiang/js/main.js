@@ -1,6 +1,7 @@
 const incrementResult = document.querySelector("h1");
 const plusButton = document.querySelector("#plus");
 const minusButton = document.querySelector("#minus");
+const incrementInput = document.querySelector("#incrementor");
 
 function addNumber()
 {
@@ -70,6 +71,8 @@ function subtractNumber()
 
 document.addEventListener("DOMContentLoaded", function()
 {
+    incrementInput.defaultValue = 1;
+
     plusButton.addEventListener("click", function()
     {
         addNumber();
