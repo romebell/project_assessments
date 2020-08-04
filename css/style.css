@@ -2,18 +2,26 @@
     display: flex;  
     justify-content: center; 
     align-items: center;  
+    font-size: 50px;
+}
     
+h1 {
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    font-size: 60px;
     
-    
+}
 
 #count {
     border: solid grey;
+    font-size: 60px;
 }
 
 #plus {
-
+font-size: 60px;
 }
 
 #minus {
-
+font-size: 60px;
 }

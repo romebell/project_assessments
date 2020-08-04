@@ -9,11 +9,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('minus').addEventListener('click', function minus(){
         count --;
         countElement.value = count;
+
     })
-    
-   
-
-   
-
 
 })
+
+
