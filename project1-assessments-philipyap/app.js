@@ -1,25 +1,27 @@
-document.addEventListener('DOMContentLoaded', ()  =>{  
-    let num1 = document.querySelector('#num1')
-    let num2 = document.querySelector('#num2')
-    let positive = document.querySelector('#positive')
-    let negative = document.querySelector('#negative')
-    
 
-    positive.addEventListener('click', function(){
-        num1.value = parseInt(num1.value) + 1
-        
-        if (num1.value < 0){
-            num1.style.color = 'red'
-            
-        }      
-    })
-    negative.addEventListener('click', function(){
-        num1.value = parseInt(num1.value) -1
-        
-        if (num1.value < 0){
-            num1.style.color = 'red'
-            
-        }       
-    })
+    let num1 = 0;
+    const countEl = document.getElementById('num1')
     
-})
+    function positive (){
+        let num2 = parseInt(document.getElementById('num2').value);
+        num1 = num1 + num2;
+        countEl.innerHTML = num1;
+        if(num1 < 0){
+            num1.style.color = 'red';
+        }
+        else{
+            num1.style.color = 'black';
+        }
+    }
+
+    function negative(){
+        let num2 = parseInt(document.getElementById('num2').value);
+        num1 = num1 - num2;
+        countEl.innerHTML = num1;
+        if(num1 < 0){
+            num1.style.color = 'red';
+        }
+        else{
+            num1.style.color = 'black';
+        }
+    }
