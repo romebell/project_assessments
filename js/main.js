@@ -1,16 +1,24 @@
-const inputNum = document.querySelector('.input-number');
 const plusButton = document.querySelector('.increase-btn');
 const minusButton = document.querySelector('.decrease-btn');
 const mainOuput = document.querySelector('.main-output')
-let count = 0;
+let count = 1;
+    function outputChangeColor () {
+        mainOuput.textContent = count;
+        if (count < 0) {
+            mainOuput.style.color = 'red';
+        } else {
+            mainOuput.style.color = 'black';
+        }
+    }
 
 plusButton.addEventListener('click',function() {
-        
-        mainOuput.textContent = count ++
-        if (inputNum.value === )
-
-    
+    let inputNum = Number(document.getElementById('input-value').value);
+        count += inputNum;
+        outputChangeColor ()
 });
 minusButton.addEventListener('click',function() {
-    mainOuput.textContent = count--
+    let inputNum = Number(document.getElementById('input-value').value);
+     count -= inputNum
+    outputChangeColor ()
 });
+
