@@ -4,20 +4,25 @@ console.log('My files are connected');
 // I know i need to include parseInt, but each place I try and implement 
 //it throws back NaN in my output
 document.addEventListener('DOMContentLoaded', function() {
-	let input = (document.getElementById('input').defaultValue = 1);
+	let input = document.getElementById('input');
+	input.defaultValue = 1;
+	console.log(input)
     
     let finalNumber = 0;
-	function plusClick() {
-		//finalNumber += parseInt(input.value);
-		finalNumber += input
-		
+	function plusClick(e) {
+		finalNumber += parseInt(input.value);
+		//finalNumber += input
+		e.preventDefault();
 		newNumber();
+		turnRed();
 	}
 	document.getElementById('plus').addEventListener('click', plusClick);
-	function minusClick() {
-       // finalNumber -= parseInt(input.value);
-		finalNumber-= input
+	function minusClick(e) {
+        finalNumber -= parseInt(input.value);
+		//finalNumber-= input
+		e.preventDefault();
 		newNumber();
+		turnRed();
         
 
 	}
@@ -27,5 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('output').innerHTML = finalNumber;
 	}
 	
+	function turnRed() {
+		document.getElementById('output').innerHTML=finalNumber;
+		if (finalNumber < 0 ) {
+			document.getElementById('output').style.color = 'red'
+		} else {
+			document.getElementById('output').style.color = 'black'
+		}
+	}
 	
 });
