@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     let count = 0;
     let countElement = document.getElementById('count');
+    
 
     document.getElementById('plus').addEventListener('click', function plus() {
         count ++;

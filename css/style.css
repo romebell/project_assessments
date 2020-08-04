@@ -1,20 +1,36 @@
-#number {
-    display: flex;  
-    justify-content: center; 
-    align-items: center;  
-    font-size: 50px;
-}
+.page-wrapper {
+    margin: 15px;
     
-
-#count {
-    border: solid grey;
-    font-size: 60px;
-}
-
-#plus {
-font-size: 60px;
-}
-
-#minus {
-font-size: 60px;
-}
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+    
+  }
+  
+  .orange-column {
+    background-color:white;
+    height: 100px;
+  }
+  
+  .blue-column {
+    background-color: white;
+    height: 100px;
+  }
+  
+  .green-column {
+    background-color: white;
+    height: 100px;
+  }
