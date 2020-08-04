@@ -1,66 +1,40 @@
 
+let currentNum = document.getElementById('currentNumber');
+let input = document.getElementById('number');
+let add = document.getElementById('addition');
+let subtract = document.getElementById('subtraction');
+
+output = 0;
+// number = 1;
+let result;
 
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-    let output = document.getElementById('total');
-    let numbers = document.getElementById('number');
-    let add = document.getElementById('adds');
-    let sub = document.getElementById('subs');
-    // output.innerText = `${result}`
-   
-
-
-    output = 0;
-    // number = 1;
-    let result;
-
-    // function currentNum(){
-    //     output.textContent = output;
-    // }
-
-    function one(){
-        let numChange = parseInt(numbers.value);
-        let originalNum = parseInt(output.textContent);
-
-        result = numChange + originalNum;
-        // console.log(result);
-        output.textContent = result;
-    }
-
-    function two(){
-        let numChange = parseInt(numbers.value);
-        let originalNum = parseInt(output.textContent);
-
-        result = numChange - originalNum;
-        // console.log(result);
-        output.textContent = result;
-    }
-    // output.textContent = result;
-    // console.log(output);
-        // console.log('clicked');
-        // let numbers = number.value;
-        // console.log(numbers);
-        // result = numbers += output;
-        // console.log(result);
-        // output.textContent = `${result}`;
-        // return result;
-        // currentNum();
-        
+function one(){
+    let numChange = parseInt(input.value);
+    let originalNum = parseInt(currentNum.textContent);
     
-    // output.textContent = `${result}`;
-    // console.log(result);
-   
+    result = numChange + originalNum;
+    currentNum.textContent = result;
+    console.log(result);
 
-    // function two(number, output){
-    //     console.log('clicked');
-    //    result = number-=output;
-    //    output.textContent = `${result}`;
-    // }
+    if (currentNum.textContent >= 0){
+        currentNum.style.color = 'black';
+    }
+}
+
+function two(){
+    let numChange = parseInt(input.value);
+    let originalNum = parseInt(currentNum.textContent);
     
-    // output.innerText = `${result}`
+    result = originalNum - numChange;
+    currentNum.textContent = result;
 
-    add.addEventListener('click', one);
-    sub.addEventListener('click', two);
+    if (currentNum.textContent < 0){
+        currentNum.style.color = 'red';
+    }
+}
 
-// })
+add.addEventListener('click', one);
+subtract.addEventListener('click', two);
+

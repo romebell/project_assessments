@@ -1,51 +1,19 @@
-/* body{
-    position: relative;
-    text-align: center;
-}
-
-table{
-    background-color: green;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    height: 500px;
-}
-
-td{
-    font-size: 40px;
-    background-color: red;
-    height: 25%;
-    width: 50px;
-    
-}
-
-.totalNumber{
-    width: 100%;
-} */
-
-
-/* body{
-    text-align: center;
-    position: relative;
-}
-
-.totalNumber{
-    position: absolute;
-    height: 50px;
-    top: 25%;
-} */
 
 body{
-    font-size: 40px;
+    font-size: 50px;
+    margin: 5px;
+    padding: 5px;
+
 }
 
 div{
     position: relative;
-    top: 200px;
+    top: 100px;
 }
 
 .flex-container {
     display: flex;  /* defaults to row layout */
+    flex-direction: row;
     justify-content: center;  /* centers items horizontally in row layout */
     align-items: center;  /* centers vertically in row layout */
     /* flex-direction: column; will set layout to column instead of row */
@@ -53,23 +21,38 @@ div{
 
 }
 
-.add{
-    height: 50px;
+.addition{
+    /* height: 50px; */
     width:50px;
+    background-color: gray;
+    color: white;
 }
 
-.subtract{
-    height: 50px;
+.subtraction{
+    /* height: 50px; */
     width:50px;
+    background-color: gray;
+    color: white;
+
 }
 
-.input{
+.totalNumber{
+    display: absolute;
+    left: 42%;
+    top: 40%;
     width: 120px;
     height: 50px;
     text-align: center;
     margin-top: auto;
+    font-size: 60px;
+    /* font: bolder; */
 }
 input{
     height: 50px;
     width: 100px;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    border-radius: 15px;
+    border: 5px solid gray;
 }
