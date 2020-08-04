@@ -1,22 +1,31 @@
-let count = 0
-
-function main() {
-    const buttonInc = document.querySelector('#increase');
-    const buttonDec = document.querySelector('#decrease');
-    const numValue = parseInt(document.querySelector("#input").value);
-    let displayNumber = document.getElementById('number');
-    buttonInc.addEventListener('click', function() {
-        count += (numValue);
-        displayNumber.innerHTML = count;
+// document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('increase').addEventListener('click', clickAdd);
+    document.getElementById('decrease').addEventListener('click', clickSub);
+	let input = document.getElementById('input');
+	input.defaultValue = 1;
+	console.log(input)
+    
+    let displayNumber = 0;
+	function clickAdd(e) {
+		displayNumber += parseInt(input.value);
+		//finalNumber += input
+		e.preventDefault();
+		number();
+		
+	}
+	function clickSub(e) {
+        displayNumber -= parseInt(input.value);
+		//finalNumber-= input
+		e.preventDefault();
+		number();
+		
         
-        console.log(displayNumber);
-    });
-    
-    
-    buttonDec.addEventListener('click', function() {
-        count -= numValue;
-        displayNumber.innerHTML = count;
-    });
-    
-}
 
+	}
+
+	function number() {
+		document.getElementById('number').innerHTML = displayNumber;
+	}
+	
+	
+	
