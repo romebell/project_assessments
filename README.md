@@ -61,6 +61,36 @@ buttAdd.addEventListener('click', () => {
 })
 ```
 
+## Change to 3. 
+3. correction on the input.value to make it subtract and add the correct way. it was previously moving in increments of one either way plus and mine. now it adding or minusing the previous integer with my corrected function 
+```JS 
+buttAdd.addEventListener('click', () => {
+   let input = document.getElementById('input').value;
+   let inputOne = parseInt(input);
+   let outputOne = parseInt(output.textContent)
+   
+   
+   output.textContent = inputOne + outputOne;
+   console.log(output.textContent)
+   
+   
+
+   })
+   buttMinus.addEventListener('click', () => {
+      let input = document.getElementById('input').value;
+      let inputOne = parseInt(input);
+      
+      let outputOne = parseInt(output.textContent)
+      console.log(outputOne)
+      
+      output.textContent = outputOne - inputOne;
+      console.log(output.textContent)
+      
+   })
+
+
+```
+
 ## Code snippet for CSS
 
 4. I wanted to make CSS last because the most important thing was the have this application work, which was done in javascript. Next I started with the div class .container to give a font-family: san serif and to have it centered by using text align. I tried using display: flex, but it made everything show up side by side and because of time I just wanted it to be simple and as close to the main project.;
@@ -100,7 +130,16 @@ buttAdd.addEventListener('click', () => {
 }
 
 ```
+6. Added styel.color and found an if statement if the integer is less than 0 to turn it red 
 
+```js
+if(outputOne - inputOne < 0){
+         output.style.color = 'red'
+      } else {
+         output.style.color = 'black'
+      }
+
+```
 
 ## Conclusion 
 I started out ok with setting up the html then went on to the javascript. Here is where im always stuck on what to do first. so I wrote in green text of what i should have to ge this thing working and went over the project-1-assessment read me for ideas of how to start. Im glad the instructors went over what it should be doing and how it looks because seeig something visual gives me an idea on how the mechanics should work. The Css was straight forward I can play on decently to see how I can style it little by little. 

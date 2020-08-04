@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
    
    output.textContent = inputOne + outputOne;
    console.log(output.textContent)
+   if(outputOne + inputOne < 0){
+      output.style.color = 'red'
+   } else {
+      output.style.color = 'black'
+   }
+   
    
    
 
@@ -37,6 +43,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
       
       output.textContent = outputOne - inputOne;
       console.log(output.textContent)
+      if(outputOne - inputOne < 0){
+         output.style.color = 'red'
+      } else {
+         output.style.color = 'black'
+      }
       
    })
 
