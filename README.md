@@ -14,5 +14,5 @@ the changes I needed to make the flex look like the example.
 
 ## JavaScript
 
-I first made variables for each of the inputs, the count which is in the second row, second column and the counter which is in the first row second column. I added event listeners to the plus and minus button and when clicked would add 1 to the counterResult's value.
+I first made variables for each of the inputs, the count which is in the second row, second column and the counter which is in the first row second column. I added event listeners to the plus and minus button and when clicked would add 1 to the counterResult's value. To change the value of the input I thought you would use setAttribute but i could not get it to function.
 
