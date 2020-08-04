@@ -122,3 +122,14 @@ body {
     border-radius: 10px;
     font-size: 75px;
   }
+
+  #counter {
+    
+    border: white solid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 75px;
+    width: 150px;
+    height: 90px;
+  }
