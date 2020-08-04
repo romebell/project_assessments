@@ -8,19 +8,15 @@
 </head>
 <body>
 
-    <div class="result">
-        <input type="text" size="20" value="0" id="count">
-    </div>
-    
-    <div class="section">
+    <div class="result" id="count">0</div>
+    <section>
         <div id="input_div">
-            <input type="button" value="+" id="plus" onclick="plus()">
-            <input type="text" size="10" value="1" id="number">
-            <input type="button" value="-" id="minus" onclick="minus()">
-            
+            <input type="button" class="change-btn" value="+" id="plus" onclick="plus()">
+            <input type="text" class="number" size="8" value="1" id="number" style="text-align:center;">
+            <input type="button" class="change-btn" value="-" id="minus" onclick="minus()">  
         </div>
 
-    </div>
+    </section>
    
 
     <script src="./js/app.js"></script>
