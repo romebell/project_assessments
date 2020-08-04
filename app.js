@@ -1,27 +1,22 @@
+let count = 0
 
-const buttonInc = document.getElementById('increase');
-const buttonDec = document.getElementById('decrease');
-const numValue = document.getElementById("input").value
-function numbers() {
- increase.addEventListener('click', addNumber) 
- decrease.addEventListener('click', subNumber)
-}
-
-
-const addNumber = e => {
-for(let i = 0; i < numValue.length; i++){
-    console.log(numValue)
-}
+function main() {
+    const buttonInc = document.querySelector('#increase');
+    const buttonDec = document.querySelector('#decrease');
+    const numValue = parseInt(document.querySelector("#input").value);
+    let displayNumber = document.getElementById('number');
+    buttonInc.addEventListener('click', function() {
+        count += (numValue);
+        displayNumber.innerHTML = count;
+        
+        console.log(displayNumber);
+    });
+    
+    
+    buttonDec.addEventListener('click', function() {
+        count -= numValue;
+        displayNumber.innerHTML = count;
+    });
     
 }
-console.log(increase)
 
-
-console.log(increase)
-const subNumber = e => {
-    for(let i = 0; i < numValue.length; i--){
-        console.log(numValue)
-
-}
-
-}
