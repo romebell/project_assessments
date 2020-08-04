@@ -1,5 +1,6 @@
 .page-wrapper {
     margin: 15px;
+    border: solid black;
     
   }
   
@@ -16,21 +17,24 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    border: solid black;
    
     
   }
   
-  .orange-column {
+  .blank-column {
     background-color:white;
     height: 100px;
+    border: black solid;
   }
   
-  .blue-column {
+  .result-column {
     background-color: white;
     height: 100px;
   }
   
-  .green-column {
+  .blank-column2 {
     background-color: white;
     height: 100px;
+    border: black solid;
   }
