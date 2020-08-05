@@ -1,20 +1,25 @@
 document.addEventListener('DOMContentLoaded', function(){
-    let count = document.getElementById('count').value
+    let count = 0;
     let counterResult = document.getElementById('counter');
+    let userInput = document.getElementById('count')
 
-    
 
     document.getElementById('plus').addEventListener('click', function plus() {
-        count ++;
+        console.log(userInput.value)
+        count = parseInt(count)+ parseInt(userInput.value);
+        counterResult.value = count;
+    
+    })
+    
+    document.getElementById('minus').addEventListener('click', function minus(){
+        count = parseInt(count)- parseInt(userInput.value);
         counterResult.value = count;
         
-    } )
-    document.getElementById('minus').addEventListener('click', function minus(){
-        count --;
-        counterResult.value = count;
-
     })
-
+    
 })
+
+
+
 
 
